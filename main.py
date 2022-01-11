@@ -1,3 +1,4 @@
+
 import os
 import shutil
 import time
@@ -7,7 +8,7 @@ def main():
 	deleted_folders_count = 0
 	deleted_files_count = 0
 
-	path = "/PATH_TO_DELETE"
+	path = "delete.txt"
 
 	days = 30
 
@@ -20,7 +21,7 @@ def main():
 			if seconds >= get_file_or_folder_age(root_folder):
 
 				remove_folder(root_folder)
-				deleted_folders_count += 1 
+				deleted_folders_count += 1
 
 				break
 
